@@ -1,0 +1,183 @@
+* {
+  margin: 2px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+body{
+	font-family: 'Montserrat', Helvetica, sans-serif;
+}
+
+.parent {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.container1 {
+  display: flex;
+  flex-flow: column nowrap;
+  background: url(/Exercici_04/img/fonsCapçalera.jpg);
+  background-position: center;
+  background-attachment: contain;
+  background-size: cover;
+}
+
+	.caixa1 {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: center;
+	}
+	
+		.caixa1Item1 {
+		margin: auto;
+		padding: 0px;
+		flex: 1 1 auto;
+		}
+		
+		.caixa1Item1Img{
+		height: 5rem;
+		width: auto;
+		}
+		
+		.caixa1Item1 a:hover{
+			opacity: .8;
+		}
+
+		.caixa1Item2 {
+		flex: 5 1 auto;
+		align-self: center;
+		}
+
+		.caixa1Item2 a {
+			padding: 5px;
+			color: gray;
+			text-decoration: none;
+			font-size: 12px;
+			word-spacing: 2px;
+			border: 1px solid transparent;
+		}
+
+		.caixa1Item2 a:hover{
+			color: darkslategray;
+			border-bottom: 1px solid darkslategray;
+		}
+				
+		.caixa1Item3{
+			margin: 0px;
+			border: 0px;
+			padding: 0px;
+			display: flex;
+			flex-flow: column wrap;
+			flex: 1 1 auto;
+		}
+
+		.caixa1Item3 i{
+			padding: 2px;
+			display: flex;
+			align-self: auto;
+			font-size: 12px;
+		}
+
+		.caixa1Item3 a {
+			border: 0px;
+			color: gray;
+			text-decoration: none;
+		}
+
+		.caixa1Item3 a:hover{
+			color: darkslategray;
+		}
+
+	.caixa2 {
+	font-family: 'Berkshire Swash', cursive;
+	font-size: 35px;
+	text-align: center;
+	color:rgba(240, 128, 128,.6);
+	}
+
+		.caixa2Item {
+		padding: 26px;
+		background: rgba(209, 209, 209, 0.2);
+		}
+		
+		.caixa2Item i{
+			font-size: 28px;
+		}
+
+
+.container2 {
+  background: black;
+  display: flex;
+}
+
+	.caixa3 {
+	display: flex;
+	background: darkblue;
+	flex: 2 1 auto;
+	flex-flow: row wrap;
+	}
+
+		.caixa3Item1 {
+		display: flex;
+		background: dodgerblue;
+		flex: 1 1 40%;
+		}
+
+		.caixa3Item2 {
+		display: flex;
+		background: powderblue;
+		flex: 1 1 100%;
+		}
+
+	.caixa4 {
+	background: tomato;
+	flex: 1 1 auto;
+	flex-flow: column wrap;
+	}
+
+		.caixa4Item {
+		background: peachpuff;
+		}
+
+.container3 {
+  background: black;
+  display: flex;
+  justify-content: center;
+}
+
+	.container3Item {
+	background: orange;
+	flex: 1 1 auto;
+	}
+
+
+/*Adaptem a la mida de tauleta*/
+@media all and (max-width: 800px) {
+  .container2 {
+    flex-direction: column;
+    background: yellow;
+  }
+}
+
+/*Adaptem a la mida de mobil*/
+@media all and (max-width: 500px) {
+.caixa1 {
+border: 4px;
+padding: 2px;
+flex-direction: column;
+align-items: stretch;
+}
+
+	.caixa1Item3{
+	display: flex;
+	flex-flow: row wrap;
+	border: 0px;
+	padding: 0px;
+	}
+
+.caixa3 {
+flex-direction: column;
+}
+
+}
