@@ -1,0 +1,111 @@
+* {
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: Helvetica, sans-serif;
+}
+
+.parent {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.container1 {
+  display: flex;
+  flex-flow: column nowrap;
+  background: black;
+}
+
+	.caixa1 {
+	display: flex;
+	flex-flow: row nowrap;
+	background-color: darkslateblue;
+	align-items: center;
+	}
+
+		.caixa1Item1 {
+		background: lightcoral;
+		flex: 1 1 auto;
+		}
+
+		.caixa1Item2 {
+		background: lightcoral;
+		flex: 5 1 auto;
+		}
+
+	.caixa2 {
+	background: orangered;
+	}
+
+		.caixa2Item {
+		background: sandybrown;
+		}
+
+
+.container2 {
+  background: black;
+  display: flex;
+}
+
+	.caixa3 {
+	display: flex;
+	background: darkblue;
+	flex: 2 1 auto;
+	flex-flow: row wrap;
+	}
+
+		.caixa3Item1 {
+		display: flex;
+		background: dodgerblue;
+		flex: 1 1 40%;
+		}
+
+		.caixa3Item2 {
+		display: flex;
+		background: powderblue;
+		flex: 1 1 100%;
+		}
+
+	.caixa4 {
+	background: tomato;
+	flex: 1 1 auto;
+	flex-flow: column wrap;
+	}
+
+		.caixa4Item {
+		background: peachpuff;
+		}
+
+.container3 {
+  background: black;
+  display: flex;
+  justify-content: center;
+}
+
+	.container3Item {
+	background: orange;
+	flex: 1 1 auto;
+	}
+
+
+/*Adaptem a la mida de tauleta*/
+@media all and (max-width: 800px) {
+  .container2 {
+    flex-direction: column;
+    background: yellow;
+  }
+}
+
+/*Adaptem a la mida de mobil*/
+@media all and (max-width: 500px) {
+  .caixa1 {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .caixa3 {
+    flex-direction: column;
+  }
+
+}
